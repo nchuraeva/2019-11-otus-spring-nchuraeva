@@ -1,0 +1,13 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost
+      port: 27017
+      database: subscription_catalog
+
+  logging:
+    level:
+      root: DEBUG
+
+server:
+  port: 8081
