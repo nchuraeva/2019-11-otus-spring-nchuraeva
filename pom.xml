@@ -7,7 +7,11 @@
     <groupId>otus.nchuraeva.spring</groupId>
     <artifactId>homework</artifactId>
     <version>1.0-SNAPSHOT</version>
-    
+
+    <modules>
+        <module>task10</module>
+    </modules>
+
     <build>
         <pluginManagement>
             <plugins>
