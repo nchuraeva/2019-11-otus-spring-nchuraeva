@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Spring Thyme Seed Starter Manager</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all" href="../css/subscriptions.css" th:href="@{/css/subscriptions.css}"/>
+</head>
+
+<body>
+
+<div>
+    <img alt="STSM logo" title="STSM logo" th:src="@{/img/stsmlogo.png}"/>
+</div>
+
+<div>
+
+    <h2>Edit subscription</h2>
+
+    <form action="#" th:action="@{/subscriptions/edit/{id}(id = ${subscription.id})}" method="post">
+
+        <fieldset>
+
+            <legend>Subscription</legend>
+
+            <div>
+                <label for="Name"> Name</label>
+                <input type="text" th:field="${subscription.service.name}"/>
+            </div>
+            <div>
+                <label for="Link">Link</label>
+                <input type="text" th:field="${subscription.service.link}"/>
+            </div>
+            <div>
+                <label for="Category">
+                    <span>Category</span>
+                </label>
+                <input type="text" th:field="${subscription.service.category.name}"/>
+            </div>
+            <div>
+                <label for="Price">Price</label>
+                <input type="text" th:field="${subscription.price}"/>
+            </div>
+            <div class="submit">
+                <button type="submit" >Edit subscription</button>
+            </div>
+
+        </fieldset>
+
+    </form>
+
+</div>
+
+</body>
+</html>
