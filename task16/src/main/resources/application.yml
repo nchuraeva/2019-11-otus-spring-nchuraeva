@@ -1,0 +1,26 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost
+      port: 27017
+      database: subscription_catalog123456
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, env, metrics, mappings, prometheus
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+    logfile:
+      enabled: true
+
+logging:
+  level:
+    org.springframework.boot.autoconfigure.logging: INFO
+  file: "task16/target/app.log"
+info:
+  app:
+    name: "Simple actuator sample"
