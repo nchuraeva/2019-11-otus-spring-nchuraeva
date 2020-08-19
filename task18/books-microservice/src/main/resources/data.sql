@@ -1,0 +1,10 @@
+INSERT INTO GENRE(NAME, DESCRIPTION)
+VALUES ('Роман', 'Большое повествовательное художественное произведение со сложным сюжетом.');
+
+INSERT INTO AUTHOR(NAME, SURNAME, DATE_OF_BIRTH) VALUES ('Борис', 'Акунин', DATE '1956-04-20');
+
+INSERT INTO BOOK(TITLE, GENRE_ID) VALUES ('Азазель', 1);
+INSERT INTO BOOK(TITLE, GENRE_ID) VALUES ('Турецкий Гамбит', 1);
+
+INSERT INTO BOOK_AUTHOR(AUTHOR_ID, BOOK_ID) VALUES(1, 1);
+INSERT INTO BOOK_AUTHOR(AUTHOR_ID, BOOK_ID) VALUES(1, 2);
